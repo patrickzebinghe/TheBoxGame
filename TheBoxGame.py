@@ -1,3 +1,8 @@
+# Made by Patrick He, concept by Andrew W., Josh W.
+# Code is not very good, but will be improved in the future
+# Feel Free to submit any suggestions
+#
+#
 from Tkinter import *
 import webbrowser
 import time
@@ -91,8 +96,8 @@ class building:
                 a.append(playing_field.create_image(a[0],a[1],image=self.photo))
                 break
        
-        
-##        self.checkup(current_turn)
+
+
         write(self.name + ' has been added to ' + current_turn.name + "'s inventory")
         current_turn = False
         place.destroy()
