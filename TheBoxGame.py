@@ -165,15 +165,17 @@ class rocker:
 
 ## remember attack, health, name, upgrade, blocking, middle, photo, tree
 
-triple_gun = building(3,1,'triple gun', False, False, False,PhotoImage(file='boxGame/triple.gif'),2,r'C:\Users\temp\Desktop\the box game\Audio\triplegun.wav')
-gun = building(1,1, 'gun', triple_gun, False, False,PhotoImage(file='boxGame/gun.gif'),1,r'C:\Users\temp\Desktop\the box game\Audio\gun.wav')
+audpath = os.path.abspath('Audio')
+
+triple_gun = building(3,1,'triple gun', False, False, False,PhotoImage(file='boxGame/triple.gif'),2,r'%s\triplegun.wav' % audpath)
+gun = building(1,1, 'gun', triple_gun, False, False,PhotoImage(file='boxGame/gun.gif'),1,r'%s\gun.wav' % audpath)
 
 tripleflag = building(0,3,'triple flag', False, True, False, PhotoImage(file='boxGame/triplef.gif'),2,False)
 flag = building(0,1,'flag', tripleflag,True, False,PhotoImage(file='boxGame/flag.gif'),1,False)
 
 
-minigun = building(4,3,'minigun',False,False,False,PhotoImage(file='boxGame/mini.gif'),3,r'C:\Users\temp\Desktop\the box game\Audio\minigun.wav')
-machinegun = building(2,3,'machinegun',minigun,False,True,PhotoImage(file='boxGame/machinegun.gif'),2,r'C:\Users\temp\Desktop\the box game\Audio\machinegun.wav')
+minigun = building(4,3,'minigun',False,False,False,PhotoImage(file='boxGame/mini.gif'),3,r'%s\minigun.wav' % audpath)
+machinegun = building(2,3,'machinegun',minigun,False,True,PhotoImage(file='boxGame/machinegun.gif'),2,r'%s\machinegun.wav' % audpath)
 starting_machinegun = building(0,3,'starting machinegun',machinegun,False,False,PhotoImage(file='boxGame/starting.gif'),1,False)
 
 machinegun.base = starting_machinegun
