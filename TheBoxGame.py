@@ -1,5 +1,5 @@
 # Made by Patrick He, concept by Andrew W., Josh W.
-# Code is HORRIBEL, but will NOT BE IMPROVED IN THE FUTURE
+# Code is HORRIBLE, but will NOT BE IMPROVED IN THE FUTURE
 #
 #
 from Tkinter import *
