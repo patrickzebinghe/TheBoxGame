@@ -1,6 +1,5 @@
 # Made by Patrick He, concept by Andrew W., Josh W.
-# Code is not very good, but will be improved in the future
-# Feel Free to submit any suggestions
+# Code is HORRIBEL, but will NOT BE IMPROVED IN THE FUTURE
 #
 #
 from Tkinter import *
